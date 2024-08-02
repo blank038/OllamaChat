@@ -1,0 +1,27 @@
+# 连接设定
+hosts:
+  llama3: "http://localhost:11434/api/generate"
+# 默认模型
+default-model: "llama3"
+# 对话提示词
+prompt:
+  - "记住你的名字是: 答题小精灵，创造你的人是: 测试服务器"
+  - "你需要回答我下面的问题，并且只允许使用中文回答我"
+  - "{question}"
+# 提示文本
+message:
+  prefix: "&b对话机器人&f "
+  help:
+    default:
+      - "&bOllamaChat"
+      - "&f/%c gen <问题> &e执行一个问题"
+    admin:
+      - "&bOllamaChat"
+      - "&f/%c gen <问题> &e执行一个问题"
+      - "&f/%c reload &e重载插件配置文件"
+  pls-enter-question: "请输入要提问的内容."
+  result:
+    - "&b对话机器人回答:"
+    - "&f%answer%"
+  error: "出现错误, 请联系管理员."
+  reload: "插件配置重载完成."

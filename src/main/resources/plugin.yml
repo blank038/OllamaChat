@@ -1,0 +1,12 @@
+name: OllamaChat
+main: com.blank038.ollamachat.OllamaChat
+depend:
+  - AyCore
+version: ${version}
+api-version: 1.13
+commands:
+  ollamachat:
+    aliases:
+      - ochat
+      - ollama
+    description: Command for OllamaChat.
